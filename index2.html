@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" />
+    <title>Resume</title>
+</head>
+<body class="new" id="cv-form1">
+    <div class="container" id="cv-form">
+        <h1 class="text-center my-4">Resume</h1>
+       <center><div class="row">
+            <center><div class="col-md-6">
+                <!--first column-->
+                <h3>Personal Information</h3>
+                <div class="form-group my-2">
+                    <label for="nameField">Name</label>
+                    <input type="text" id="nameField" placeholder="Enter here" class="form-control">
+                </div>
+                <div class="form-group my-2">
+                    <label for="contactField">Contact</label>
+                    <input type="text" id="contactField" placeholder="Enter here" class="form-control">
+                </div>
+                <div class="form-group my-2">
+                    <label for="addressField">Address</label>
+                    <textarea id="addressField" placeholder="Enter here" class="form-control" rows="3"></textarea>
+                </div>
+
+                <div class="form-group mt-4">
+
+                    <label for="">Select Photo</label>
+                    <input id="imageField" type="file" class="form-control">
+
+
+                </div>
+
+
+
+                <h3>Important LInks</h3>
+                <div class="form-group my-2">
+                    <label for="fbField">Facebook</label>
+                    <input type="text" id="fbField" placeholder="Enter here" class="form-control">
+                </div>
+                <div class="form-group my-2">
+                    <label for="linkedField">LinkedIn </label>
+                    <input type="text" id="linkedField" placeholder="Enter here" class="form-control">
+                </div>
+                <div class="form-group my-2">
+                    <label for="gitField">GitHub</label>
+                    <input type="text" id="gitField" placeholder="Enter here" class="form-control">
+                </div>
+                <h3>Professional Information</h3>
+                <div class="form-group my-2">
+                    <label for="objectField">Objective</label>
+                    <textarea id="objectField" placeholder="Enter here" class="form-control" rows="3"></textarea>
+                </div>
+                <div class="form-group my-2">
+                    <label for="workField">Work Experience</label>
+                    <textarea id="workField" placeholder="Enter here" class="form-control" rows="3"></textarea>
+                </div>
+                <div class="form-group my-2">
+                    <label for="skillField">Skills</label>
+                    <textarea id="skillField" placeholder="Enter here" class="form-control" rows="5"></textarea>
+                </div>
+                <div class="form-group my-2">
+                    <label for="degField">Degree/B.Tech</label>
+                    <textarea id="degField" placeholder="Enter here" class="form-control" rows="1"></textarea>
+                </div>
+                <div class="form-group my-2">
+                    <label for="interField">Intermediate</label>
+                    <textarea id="interField" placeholder="Enter here" class="form-control" rows="1"></textarea>
+                </div>
+
+                <div class="form-group my-2">
+                    <label for="sclField">School</label>
+                    <textarea id="sclField" placeholder="Enter here" class="form-control" rows="1"></textarea>
+                </div>
+
+
+
+            </div>
+            
+          
+        </center>
+       </div></center>
+       <div class="container text-center my-4">
+        <button onclick="generateCV1()" class="btn btn-primary btn-lg ">Generate CV1</button>
+       </div>
+
+
+       <div class="container text-center my-4">
+        <button onclick="generateCV2()" class="btn btn-primary btn-lg ">Generate CV2</button>
+       </div>
+
+       <div class="container text-center my-4">
+        <button onclick="generateCV3()" class="btn btn-primary btn-lg ">Generate CV3</button>
+       </div>
+
+
+
+    </div>
+        <div class="container" id="cv-template1">
+            <div class="container" id="cv-formnew1">
+
+            <div class="row">
+                <div class="col-md-4 text-center py-5 background">
+                    <!--first column-->
+                        
+                    <img id="imageT" src="https://campussafetyconference.com/wp-content/uploads/2020/08/iStock-476085198.jpg" alt="" class="img-fluid myimg">
+                    <div class="container"><hr>
+                        <p id="nameT1">vijay</p>
+                        <p id="contactT">454545421</p>
+                        <p id="addressT">4-400 anantapur</p>
+                        <hr>
+                        <p><a href="#1" id="fbT" >https://www.Facebook.com</a></p>
+                        <p><a href="#1" id="linkedT" >https://www.LinkedIn.com</a></p>
+                        <p><a href="#1" id="gitT" >https://www.GitHub.com</a></p>
+                    </div>
+                
+                </div>
+
+
+                <div class="col-md-8">
+                    <!--second column-->
+                    <h1 id="nameT2" class="text-center mt=4" style="font-weight: 900;">vijay</h1>
+                    
+                    <div class="card mt-4">
+                        <div class="card-header background">
+                            <h3>Objective</h3>
+                        </div>
+                        <div class="card-body">
+                            <p id="objectT">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sapiente dolorem sed quo velit sunt cum, beatae quasi ab repellat tempore quaerat eligendi blanditiis aliquid dolorum cumque ut. Sed odit rem iure aliquam deserunt facere aliquid vitae ducimus officia, numquam nemo omnis sunt atque. Blanditiis placeat vitae adipisci modi mollitia.</p>
+
+                        </div>
+                    </div>
+
+                    <div class="card mt-4">
+                        <div class="card-header background">
+                            <h3>Work Experience</h3>
+                        </div>
+                        <div class="card-body">
+                            <vl id="workT">
+                                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit, eum?</li>
+                                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit, eum?</li>
+                                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit, eum?</li>
+                            
+                            </vl>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="card mt-4">
+                        <div class="card-header background">
+                            <h3>Skills</h3>
+                        </div>
+                        <div class="card-body">
+                            <p id="skillT">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sapiente dolorem sed quo velit sunt cum, beatae quasi ab repellat tempore quaerat eligendi blanditiis aliquid dolorum cumque ut. Sed odit rem iure aliquam deserunt facere aliquid vitae ducimus officia, numquam nemo omnis sunt atque. Blanditiis placeat vitae adipisci modi mollitia.</p>
+
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="card mt-4">
+                        <div class="card-header background">
+                            <h3>Academic Qualification</h3>
+                        </div>
+                        <div class="card-body">
+                            
+
+                            
+     
+                    
+                    <div class="card mt-4">
+                        <div class="card-header background">
+                            <h3>Graduation</h3>
+                        </div>
+                        <div class="card-body">
+                            <p id="degT">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sapiente dolorem sed quo velit sunt cum, beatae quasi ab repellat tempore quaerat eligendi blanditiis aliquid dolorum cumque ut. Sed odit rem iure aliquam deserunt facere aliquid vitae ducimus officia, numquam nemo omnis sunt atque. Blanditiis placeat vitae adipisci modi mollitia.</p>
+
+                        </div>
+                    </div>
+
+
+
+
+
+
+                    
+                        <div class="card mt-4">
+                            <div class="card-header background">
+                                <h3>Intermediate/Diploma</h3>
+                            </div>
+                            <div class="card-body">
+                                <p id="interT">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sapiente dolorem sed quo velit sunt cum, beatae quasi ab repellat tempore quaerat eligendi blanditiis aliquid dolorum cumque ut. Sed odit rem iure aliquam deserunt facere aliquid vitae ducimus officia, numquam nemo omnis sunt atque. Blanditiis placeat vitae adipisci modi mollitia.</p>
+    
+                            </div>
+                        </div>
+
+
+
+                        
+               
+                    
+                    <div class="card mt-4">
+                        <div class="card-header background">
+                            <h3>School</h3>
+                        </div>
+                        <div class="card-body">
+                            <p id="sclT">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sapiente dolorem sed quo velit sunt cum, beatae quasi ab repellat tempore quaerat eligendi blanditiis aliquid dolorum cumque ut. Sed odit rem iure aliquam deserunt facere aliquid vitae ducimus officia, numquam nemo omnis sunt atque. Blanditiis placeat vitae adipisci modi mollitia.</p>
+
+                        </div>
+                    </div>
+
+
+
+
+
+          
+                    
+                    
+
+
+
+
+
+                        </div>
+                    </div>
+
+
+                    
+
+
+                </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="container" id="cv-template2">
+            <div class="container" id="cv-formnew2">
+            
+            <div class="row">
+               
+
+
+                <div class="col-md-8">
+                    <!--second column-->
+                    <h1 id="nameT4" class="text-center mt=4" style="font-weight: 900;">vijay</h1>
+                    
+                    <div class="card mt-4">
+                        <div class="card-header background4">
+                            <h3>Objective</h3>
+                        </div>
+                        <div class="card-body">
+                            <p id="objectT1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sapiente dolorem sed quo velit sunt cum, beatae quasi ab repellat tempore quaerat eligendi blanditiis aliquid dolorum cumque ut. Sed odit rem iure aliquam deserunt facere aliquid vitae ducimus officia, numquam nemo omnis sunt atque. Blanditiis placeat vitae adipisci modi mollitia.</p>
+
+                        </div>
+                    </div>
+
+                    <div class="card mt-4">
+                        <div class="card-header background4">
+                            <h3>Work Experience</h3>
+                        </div>
+                        <div class="card-body">
+                            <vl id="workT1">
+                                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit, eum?</li>
+                                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit, eum?</li>
+                                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit, eum?</li>
+                            
+                            </vl>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="card mt-4">
+                        <div class="card-header background4">
+                            <h3>Skills</h3>
+                        </div>
+                        <div class="card-body">
+                            <p id="skillT1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sapiente dolorem sed quo velit sunt cum, beatae quasi ab repellat tempore quaerat eligendi blanditiis aliquid dolorum cumque ut. Sed odit rem iure aliquam deserunt facere aliquid vitae ducimus officia, numquam nemo omnis sunt atque. Blanditiis placeat vitae adipisci modi mollitia.</p>
+
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+                        
+                        <div class="card-body">
+                            
+
+                            
+     
+                    
+                    <div class="card mt-4">
+                        <div class="card-header background4">
+                            <h3>Graduation</h3>
+                        </div>
+                        <div class="card-body">
+                            <p id="degT1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sapiente dolorem sed quo velit sunt cum, beatae quasi ab repellat tempore quaerat eligendi blanditiis aliquid dolorum cumque ut. Sed odit rem iure aliquam deserunt facere aliquid vitae ducimus officia, numquam nemo omnis sunt atque. Blanditiis placeat vitae adipisci modi mollitia.</p>
+
+                        </div>
+                    </div>
+
+
+
+
+
+
+                    
+                        <div class="card mt-4">
+                            <div class="card-header background4">
+                                <h3>Intermediate/Diploma</h3>
+                            </div>
+                            <div class="card-body">
+                                <p id="interT1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sapiente dolorem sed quo velit sunt cum, beatae quasi ab repellat tempore quaerat eligendi blanditiis aliquid dolorum cumque ut. Sed odit rem iure aliquam deserunt facere aliquid vitae ducimus officia, numquam nemo omnis sunt atque. Blanditiis placeat vitae adipisci modi mollitia.</p>
+    
+                            </div>
+                        </div>
+
+
+
+                        
+               
+                    
+                    <div class="card mt-4">
+                        <div class="card-header background4">
+                            <h3>School</h3>
+                        </div>
+                        <div class="card-body">
+                            <p id="sclT1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sapiente dolorem sed quo velit sunt cum, beatae quasi ab repellat tempore quaerat eligendi blanditiis aliquid dolorum cumque ut. Sed odit rem iure aliquam deserunt facere aliquid vitae ducimus officia, numquam nemo omnis sunt atque. Blanditiis placeat vitae adipisci modi mollitia.</p>
+
+                        </div>
+                    </div>
+
+
+
+
+
+          
+                    
+                    
+
+
+
+
+
+                        </div>
+
+
+                    
+
+
+                </div>
+                <div class="col-md-4 text-center py-5 background4">
+                    <!--first column-->
+                        
+                    <img id="imageT1" src="https://campussafetyconference.com/wp-content/uploads/2020/08/iStock-476085198.jpg" alt="" class="img-fluid myimg">
+                    <div class="container"><hr>
+                        <p id="nameT3">vijay</p>
+                        <p id="contactT1">454545421</p>
+                        <p id="addressT1">4-400 anantapur</p>
+                        <hr>
+                        <p><a href="#1" id="fbT1" >https://www.Facebook.com</a></p>
+                        <p><a href="#1" id="linkedT1" >https://www.LinkedIn.com</a></p>
+                        <p><a href="#1" id="gitT1" >https://www.GitHub.com</a></p>
+                    </div>
+                
+                </div>
+            </div>
+            </div>
+        </div>
+
+
+
+
+
+
+        <div class="container" id="cv-template3">
+            <div class="container" id="cv-formnew4">
+            <div class="container " id="cv-formnew3" >
+            
+            <center><img id="imageT2" src="https://campussafetyconference.com/wp-content/uploads/2020/08/iStock-476085198.jpg" alt="" class="img-fluid myimg"></center>
+                <center><h1 id="nameT6" class="text-center mt=4" style="font-weight: 900;">vijay</h1>
+                </center><hr>
+            <div class="row">
+                <div class="col-md-5 text-center py-5 ">
+                    <!--first column-->
+                        
+                    <div class="container">
+                        <p id="nameT5">vijay</p>
+                        <p id="contactT2">454545421</p>
+                        <p id="addressT2">4-400 anantapur</p>
+                        
+                        <p><a href="#1" id="fbT2" >https://www.Facebook.com</a></p>
+                        <p><a href="#1" id="linkedT2" >https://www.LinkedIn.com</a></p>
+                        <p><a href="#1" id="gitT2" >https://www.GitHub.com</a></p>
+                    </div>
+                
+                </div>
+
+
+                <div class="col-md-7">
+                    <!--second column-->
+                    
+                    <div class="card mt-4">
+                        <div class="card-header background3">
+                            <h3>Objective</h3>
+                        </div>
+                        <div class="card-body">
+                            <p id="objectT2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sapiente dolorem sed quo velit sunt cum, beatae quasi ab repellat tempore quaerat eligendi blanditiis aliquid dolorum cumque ut. Sed odit rem iure aliquam deserunt facere aliquid vitae ducimus officia, numquam nemo omnis sunt atque. Blanditiis placeat vitae adipisci modi mollitia.</p>
+
+                        </div>
+                    </div>
+
+                    <div class="card mt-4">
+                        <div class="card-header background3">
+                            <h3>Work Experience</h3>
+                        </div>
+                        <div class="card-body">
+                            <vl id="workT2">
+                                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit, eum?</li>
+                                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit, eum?</li>
+                                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit, eum?</li>
+                            
+                            </vl>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="card mt-4">
+                        <div class="card-header background3">
+                            <h3>Skills</h3>
+                        </div>
+                        <div class="card-body">
+                            <p id="skillT2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sapiente dolorem sed quo velit sunt cum, beatae quasi ab repellat tempore quaerat eligendi blanditiis aliquid dolorum cumque ut. Sed odit rem iure aliquam deserunt facere aliquid vitae ducimus officia, numquam nemo omnis sunt atque. Blanditiis placeat vitae adipisci modi mollitia.</p>
+
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+                   
+                            
+
+                            
+     
+                    
+                    <div class="card mt-4">
+                        <div class="card-header background3">
+                            <h3>Graduation</h3>
+                        </div>
+                        <div class="card-body">
+                            <p id="degT2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sapiente dolorem sed quo velit sunt cum, beatae quasi ab repellat tempore quaerat eligendi blanditiis aliquid dolorum cumque ut. Sed odit rem iure aliquam deserunt facere aliquid vitae ducimus officia, numquam nemo omnis sunt atque. Blanditiis placeat vitae adipisci modi mollitia.</p>
+
+                        </div>
+                    </div>
+
+
+
+
+
+
+                    
+                        <div class="card mt-4">
+                            <div class="card-header background3">
+                                <h3>Intermediate/Diploma</h3>
+                            </div>
+                            <div class="card-body">
+                                <p id="interT2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sapiente dolorem sed quo velit sunt cum, beatae quasi ab repellat tempore quaerat eligendi blanditiis aliquid dolorum cumque ut. Sed odit rem iure aliquam deserunt facere aliquid vitae ducimus officia, numquam nemo omnis sunt atque. Blanditiis placeat vitae adipisci modi mollitia.</p>
+    
+                            </div>
+                        </div>
+
+
+
+                        
+               
+                    
+                    <div class="card mt-4">
+                        <div class="card-header background3">
+                            <h3>School</h3>
+                        </div>
+                        <div class="card-body">
+                            <p id="sclT2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sapiente dolorem sed quo velit sunt cum, beatae quasi ab repellat tempore quaerat eligendi blanditiis aliquid dolorum cumque ut. Sed odit rem iure aliquam deserunt facere aliquid vitae ducimus officia, numquam nemo omnis sunt atque. Blanditiis placeat vitae adipisci modi mollitia.</p>
+
+                        </div>
+                    </div>
+
+
+
+
+
+          
+                    
+                    
+
+
+
+
+
+                        </div>
+                    </div>
+
+
+                    
+
+
+                </div>
+            </div>
+                </div>
+            </div>
+         
+        </div>
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>     
